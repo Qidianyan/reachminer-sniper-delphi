@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReachMiner-Sniper | Gensyn Delphi Tactical Evidence Console</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="console-shell">
+    <header class="topbar">
+      <div class="brand-group">
+        <span class="brand-eyebrow">GENSYN DELPHI × DORAHACKS AGENT ARENA · ARXIV:2606.07434</span>
+        <h1 class="brand-title">ReachMiner-Sniper · Actuarial First-Hand Evidence Console</h1>
+      </div>
+      <div class="wallet-guard-strip">
+        <span class="pill-badge pill-green" id="ledger-conn-badge">
+          <span class="status-dot"></span>
+          <span id="ledger-source-text">SQLITE LEDGER VERIFIED</span>
+        </span>
+        <span class="pill-badge pill-amber" id="wallet-lock-badge">
+          SINGLE-WALLET LOCK: LOADING
+        </span>
+      </div>
+    </header>
+
+    <section class="kpi-grid" aria-label="Actuarial KPIs">
+      <article class="kpi-card">
+        <span class="kpi-label">DoraHacks Qualification Gate</span>
+        <div class="kpi-value accent-green" id="kpi-qualification">--</div>
+        <div class="progress-track">
+          <div class="progress-fill" id="kpi-qual-bar" style="width: 0%"></div>
+        </div>
+        <span class="kpi-sub" id="kpi-qual-sub">Min 3 Markets &amp; 10 Judged Submissions</span>
+      </article>
+
+      <article class="kpi-card">
+        <span class="kpi-label">Two-Stage Yield (Stage-1 + REE Stage-2)</span>
+        <div class="kpi-value accent-amber" id="kpi-total-usdc">$0.00 USDC</div>
+        <span class="kpi-sub" id="kpi-usdc-breakdown">Stage-1 Shift + Stage-2 Terminal LMSR</span>
+      </article>
+
+      <article class="kpi-card">
+        <span class="kpi-label">CiteCheck &amp; ShadowJudge Precision</span>
+        <div class="kpi-value accent-green" id="kpi-acceptance-rate">--%</div>
+        <span class="kpi-sub" id="kpi-blocked-sub">0 Wasteful Shots Intercepted</span>
+      </article>
+
+      <article class="kpi-card">
+        <span class="kpi-label">Settlement Window Hard Cutoff</span>
+        <div class="kpi-value">2026-12-10 UTC</div>
+        <span class="kpi-sub">Locks Stage-2 REE Oracle Payout Before Dec 12</span>
+      </article>
+    </section>
+
+    <section class="main-split">
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">3-Slot Magazine &amp; Market Alpha Funnel</h2>
+            <span class="panel-subtitle">Hard Cap &lt;= 3 Submissions / Market · Prioritizing 0.30 &lt;= p &lt;= 0.70 High-Entropy Markets</span>
+          </div>
+          <div class="filter-tabs" role="tablist">
+            <button class="tab-btn active" data-filter="all" type="button">All Scanned</button>
+            <button class="tab-btn" data-filter="eligible" type="button">Eligible (&lt;= Dec 10)</button>
+            <button class="tab-btn" data-filter="rejected" type="button">Filtered Out</button>
+          </div>
+        </div>
+        <div class="market-list" id="market-list-container"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">LMSR Information Gain &amp; Entropy Curve</h2>
+            <span class="panel-subtitle">Hossain, Andrade, Zang &amp; Chen (arXiv:2606.07434 Definition 5)</span>
+          </div>
+        </div>
+        <div class="chart-container" id="lmsr-svg-container"></div>
+        <div class="chart-legend">
+          <span class="legend-item"><span class="legend-swatch swatch-amber"></span>Expected LMSR Payoff (|Δp|=15%)</span>
+          <span class="legend-item"><span class="legend-swatch swatch-parchment"></span>Shannon Entropy H(p)</span>
+          <span class="legend-item"><span class="legend-swatch swatch-green"></span>Executed Market Posterior</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-split">
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Verified First-Hand Evidence Packets (3 Clean Attachments)</h2>
+            <span class="panel-subtitle">Zero Judge-Inducement Chronicle Format · Exact Byte-Offset CiteCheck</span>
+          </div>
+        </div>
+        <div class="packet-list" id="packet-list-container"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">ShadowJudge &amp; Guardrail Interceptions</h2>
+            <span class="panel-subtitle">Bullets Saved from Duplicate, Low-|Δp|, Hallucination &amp; Prompt Injection</span>
+          </div>
+        </div>
+        <div class="blocked-list" id="blocked-list-container"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./data/latest_ledger_snapshot.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reachminer-sniper"
+version = "1.0.0"
+description = "ReachMiner-Sniper: First-Hand Evidence Mining Agent for Gensyn Delphi Evidence Markets (arXiv:2606.07434)"
+readme = "../README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v --tb=short"

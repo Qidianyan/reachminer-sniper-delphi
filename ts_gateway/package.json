@@ -1,0 +1,20 @@
+{
+  "name": "reachminer-sniper-delphi-gateway",
+  "version": "1.0.0",
+  "description": "TypeScript SDK Gateway & SingleWalletGuard aligned with @gensyn-ai/gensyn-delphi-sdk for ReachMiner-Sniper",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "dependencies": {
+    "@gensyn-ai/gensyn-delphi-sdk": "^2.1.0",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,24 @@
+# Dependencies & Virtual Environments
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+stylus_verifier/target/
+target/
+
+# Secrets & Environment Variables (keep .env.example only)
+.env
+.env.*
+!.env.example
+secrets/
+
+# Large Media & Archives
+*.mp4
+*.mov
+*.zip
+*.exe
+.DS_Store
